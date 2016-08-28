@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">FinanceProject</string>
+    <string name="stockText">No Stocks</string>
+    <string name="stockweb">stockWeb</string>
+    <string name="setSymbol">Enter Stock Symbol</string>
+    <string name="get_quote">Get Stocks</string>
+</resources>
