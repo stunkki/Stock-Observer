@@ -51,11 +51,36 @@
         android:id="@+id/stockChangePercentageOutput"
         android:layout_width="80dp"
         android:layout_height="20dp"
-        android:layout_marginTop="74dp"
+        android:layout_marginTop="73dp"
         android:layout_below="@+id/get_quote_button"
-        android:layout_alignRight="@+id/get_quote_button"
-        android:layout_alignEnd="@+id/get_quote_button" />
+        android:layout_alignLeft="@+id/changePercentageHeader"
+        android:layout_alignStart="@+id/changePercentageHeader" />
 
+    <TextView
+        android:id="@+id/symbolHeader"
+        android:text="@string/symbolHeader"
+        android:layout_width="80dp"
+        android:layout_height="20dp"
+        android:layout_above="@+id/stockSymbolOutput"
+        android:layout_alignLeft="@+id/stockSymbolOutput"
+        android:layout_alignStart="@+id/stockSymbolOutput" />
 
+    <TextView
+        android:id="@+id/priceHeader"
+        android:text="@string/priceHeader"
+        android:layout_width="80dp"
+        android:layout_height="20dp"
+        android:layout_above="@+id/stockPriceOutput"
+        android:layout_alignLeft="@+id/stockPriceOutput"
+        android:layout_alignStart="@+id/stockPriceOutput" />
+
+    <TextView
+        android:id="@+id/changePercentageHeader"
+        android:text="@string/changePercentageHeader"
+        android:layout_width="80dp"
+        android:layout_height="20dp"
+        android:layout_above="@+id/stockPriceOutput"
+        android:layout_toRightOf="@+id/priceHeader"
+        android:layout_toEndOf="@+id/priceHeader" />
 
 </RelativeLayout>

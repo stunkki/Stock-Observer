@@ -4,4 +4,11 @@
     <string name="stockweb">stockWeb</string>
     <string name="setSymbol">Enter Stock Symbol</string>
     <string name="get_quote">Get Stocks</string>
+    <string name="changePercentageHeader">Percent:</string>
+    <string name="symbolHeader">Symbol:</string>
+    <string name="priceHeader">Price:</string>
+    <string name="toolbarTitle">"App.class"</string>
+    <string name="menu_refresh">Finance</string>
+    <string name="menu_settings">Menu</string>
+    <string name="menu_location">location</string>
 </resources>
