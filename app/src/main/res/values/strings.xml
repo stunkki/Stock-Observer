@@ -8,5 +8,19 @@
     <string name="symbolHeader">Symbol:</string>
     <string name="priceHeader">Price:</string>
     <string name="toolbarTitle">"App.class"</string>
+    <string name="allStocks"></string>
+
+
+        <string-array name="tickers_array">
+            <item>AAAP|Advanced Accelerator Applications S.A.</item>
+            <item>AAL|American Airlines Group, Inc</item>
+            <item>Algeria</item>
+            <item>American Samoa</item>
+            <item>Andorra</item>
+            <item>Angola</item>
+            <item>Anguilla</item>
+            <item>Antarctica</item>
+
+        </string-array>
 
 </resources>
