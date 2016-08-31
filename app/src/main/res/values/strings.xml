@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name"></string>
+    <string name="app_name">Stock Observer</string>
     <string name="stockText">No Stocks</string>
     <string name="stockweb">stockWeb</string>
     <string name="setSymbol">Enter Stock Symbol</string>
@@ -8,7 +8,5 @@
     <string name="symbolHeader">Symbol:</string>
     <string name="priceHeader">Price:</string>
     <string name="toolbarTitle">"App.class"</string>
-    <string name="menu_refresh"></string>
-    <string name="menu_settings"></string>
-    <string name="menu_location"></string>
+
 </resources>

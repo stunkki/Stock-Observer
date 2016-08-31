@@ -20,14 +20,15 @@
 
     <EditText
         android:id="@+id/setSymbol"
-        android:layout_width="250dp"
+        android:layout_width="200dp"
         android:layout_height="50dp"
         android:ems="10"
         android:hint="@string/setSymbol"
-        android:layout_alignParentTop="true"
+        android:layout_below="@+id/include"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="53dp">
+        android:layout_marginLeft="47dp"
+        android:layout_marginStart="47dp">
 
         <requestFocus />
     </EditText>
@@ -37,7 +38,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/get_quote"
-        android:layout_below="@+id/include"
+        android:layout_alignTop="@+id/setSymbol"
         android:layout_toRightOf="@+id/setSymbol"
         android:layout_toEndOf="@+id/setSymbol" />
 
