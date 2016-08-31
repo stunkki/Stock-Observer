@@ -7,6 +7,7 @@ This README would normally document whatever steps are necessary to get your app
 * Quick summary
 
 Android app which uses Yahoo Finance API for getting stock data
+
 * Version
 * [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
 
