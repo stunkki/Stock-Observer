@@ -16,6 +16,8 @@ import java.util.concurrent.ExecutionException;
 
 import org.apache.http.util.ByteArrayBuffer;
 
+
+import android.content.Intent;
 import android.os.Environment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.AsyncTask;
@@ -86,7 +88,6 @@ public class MainActivity extends AppCompatActivity {
                 try {
                     String segments[] = setSymbol.getText().toString().split("\\|");
                     String firstSegment = segments[0];
-                    Log.i("segment", firstSegment);
                     List<String> results = new Task().execute(
                             firstSegment).get();
                     setResult(results.get(0), results.get(1), results.get(2));
@@ -172,6 +173,15 @@ public class MainActivity extends AppCompatActivity {
                 switch (item.getItemId()) {
                     case R.id.searchItem:
                         Toast.makeText(getApplicationContext(), "Search", Toast.LENGTH_SHORT).show();
+
+                        Intent intent = new Intent(MainActivity.this, ObserverActivity.class);
+                        /*
+                        EditText editText = (EditText) findViewById(R.id.edit_message);
+                        String message = editText.getText().toString();
+                        intent.putExtra(EXTRA_MESSAGE, message);
+                        */
+                        startActivity(intent);
+
                         break;
                     case R.id.filterItem:
 

@@ -9,9 +9,14 @@
     <string name="priceHeader">Price:</string>
     <string name="toolbarTitle">"App.class"</string>
     <string name="allStocks"></string>
+    <string name="value_range_text">Set value range for your stock</string>
+    <string name="min_value_edit">Set min value</string>
+    <string name="max_value_edit">Set max value</string>
+    <string name="set_min_btn">Set Min</string>
+    <string name="set_max_btn">Set Max</string>
 
 
-        <string-array name="tickers_array">
+    <string-array name="tickers_array">
             <item>AAAP|Advanced Accelerator Applications S.A.</item>
             <item>AAL|American Airlines Group, Inc</item>
             <item>Algeria</item>
