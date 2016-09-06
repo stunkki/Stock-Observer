@@ -91,6 +91,7 @@ public class MainActivity extends AppCompatActivity {
                     List<String> results = new Task().execute(
                             firstSegment).get();
                     setResult(results.get(0), results.get(1), results.get(2));
+
                 } catch (InterruptedException e) {
                     // TODO Auto-generated catch block
                     e.printStackTrace();
@@ -110,7 +111,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    class Task extends AsyncTask<String, Void, List<String>> {
+    public static class Task extends AsyncTask<String, Void, List<String>> {
 
         protected List<String> doInBackground(String... symbols) {
             try {
@@ -172,7 +173,7 @@ public class MainActivity extends AppCompatActivity {
             public boolean onMenuItemClick(MenuItem item) {
                 switch (item.getItemId()) {
                     case R.id.searchItem:
-                        Toast.makeText(getApplicationContext(), "Search", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(), "Setting Reminder", Toast.LENGTH_SHORT).show();
 
                         Intent intent = new Intent(MainActivity.this, ObserverActivity.class);
                         /*
@@ -180,6 +181,7 @@ public class MainActivity extends AppCompatActivity {
                         String message = editText.getText().toString();
                         intent.putExtra(EXTRA_MESSAGE, message);
                         */
+                        intent.putExtra("symbol", String.valueOf(symbolHeader));
                         startActivity(intent);
 
                         break;
