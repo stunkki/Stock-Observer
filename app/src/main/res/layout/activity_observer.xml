@@ -69,7 +69,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New Text"
+        android:text=""
         android:id="@+id/max_value_text_view"
         android:layout_below="@+id/set_min_value"
         android:layout_alignLeft="@+id/min_value_text_view"

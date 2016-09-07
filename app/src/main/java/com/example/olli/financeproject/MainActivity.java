@@ -175,13 +175,15 @@ public class MainActivity extends AppCompatActivity {
                     case R.id.searchItem:
                         Toast.makeText(getApplicationContext(), "Setting Reminder", Toast.LENGTH_SHORT).show();
 
-                        Intent intent = new Intent(MainActivity.this, ObserverActivity.class);
+                        Intent intent = new Intent(getBaseContext(), ObserverActivity.class);
                         /*
                         EditText editText = (EditText) findViewById(R.id.edit_message);
                         String message = editText.getText().toString();
                         intent.putExtra(EXTRA_MESSAGE, message);
                         */
-                        intent.putExtra("symbol", String.valueOf(symbolHeader));
+                        String symbolString = symbolOut.getText().toString();
+                        Log.d("symbolString:", symbolString);
+                        intent.putExtra("symbol", symbolString);
                         startActivity(intent);
 
                         break;
